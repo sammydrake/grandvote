@@ -5,7 +5,7 @@ import { ContextElection } from "../context/Blockchain.services";
 
 const VotingChairman = ({ listOfAspirants }) => {
   //const router = useRouter();
-  const { aspirants, grantOwnership } = useContext(ContextElection);
+  const { aspirants, grantOwnership, freshPoll } = useContext(ContextElection);
 
   const [listName, setListName] = useState("");
   const [ProofreadItem, setProofreadItem] = useState([]);
@@ -286,6 +286,16 @@ const VotingChairman = ({ listOfAspirants }) => {
                   }}
                   className="bg-green-500 text-white p-2 rounded-lg"
                 />
+                <div>
+                  <div className="flex mt-4">
+                    <Button
+                      btnName={"Create A Fresh Poll"}
+                      handleClick={() => {
+                        freshPoll();
+                      }}
+                    />
+                  </div>
+                </div>
               </div>
             </div>
           </div>

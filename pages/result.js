@@ -8,7 +8,6 @@ const ViewResult = ({ listedNames }) => {
     retrieveAspirant,
     retrieveAspirantLength,
     isVotingEnd,
-    freshPoll,
   } = useContext(ContextElection);
   const [aspirants, setAspirants] = useState([]);
   const [voteCount, setVoteCount] = useState([]);
@@ -101,14 +100,7 @@ const ViewResult = ({ listedNames }) => {
               </p>
             </div>
           )}
-          <div className="flex mt-4">
-            <Button
-              btnName={"Create A Fresh Poll"}
-              handleClick={() => {
-                freshPoll();
-              }}
-            />
-          </div>
+          <div className="flex mt-4"></div>
         </div>
       </div>
     </div>

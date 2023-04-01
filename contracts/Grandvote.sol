@@ -32,6 +32,7 @@ contract Grandvote {
     uint256 public totalVotes;
     address[] enlistedVoters;
     uint256 public timestamp;
+    
 
     
 // Define the constructor for the contract.
