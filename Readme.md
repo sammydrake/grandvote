@@ -55,4 +55,4 @@ _License_:
 The project is licensed under the MIT License. See LICENSE for more information.
 
 _Credits_:
-The app was built by me.
+The app was built by me(Samson)
